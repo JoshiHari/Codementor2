@@ -1,0 +1,198 @@
+@media (max-width: 375px) and (min-width: 0px) {
+  * {
+    font-family: "Poppins", sans-serif;
+    padding: none;
+    margin: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body {
+    background-color: #fafafa;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  body h1 {
+    color: #4c4e61;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+  }
+  body h1 span {
+    color: #4c4e61;
+    font-weight: 600;
+    display: block;
+  }
+  body p {
+    font-size: 12px;
+    color: #a3a5ae;
+    text-align: center;
+    display: block;
+    width: 250px;
+    font-weight: 200px;
+    margin-bottom: 35px;
+  }
+  body div div {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 10px 10px -8px #a3a5ae;
+            box-shadow: 0px 10px 10px -8px #a3a5ae;
+    height: 200px;
+    border-radius: 5px;
+    width: 250px;
+  }
+  body div div img {
+    margin-top: 30px;
+    margin-bottom: -10px;
+    height: auto;
+    width: 40px;
+    float: right;
+  }
+  body div div h3 {
+    color: #4c4e61;
+    margin-top: -10px;
+  }
+  body div div small {
+    display: block;
+    color: #a3a5ae;
+    font-size: 11px;
+  }
+  body div .Supervisor {
+    border-top: 3px solid #45d3d3;
+  }
+  body div .Team {
+    border-top: 3px solid #ea5353;
+  }
+  body div .Karma {
+    border-top: 3px solid #fcaf4a;
+  }
+  body div .Calculator {
+    border-top: 3px solid #549ef2;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 375px) {
+  * {
+    font-family: "Poppins", sans-serif;
+    padding: none;
+    margin: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body h1 {
+    margin-top: 120px;
+    display: block;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: -130px;
+  }
+  body p {
+    display: block;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 100px;
+    color: #a3a5ae;
+  }
+  body span {
+    display: block;
+    font-weight: 600;
+  }
+  body div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 234px, 234px, 234px;
+        grid-template-columns: 234px, 234px, 234px;
+    -ms-grid-rows: 200px, 200px, 200px;
+        grid-template-rows: 200px, 200px, 200px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: -100px;
+  }
+  body div div {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 10px 10px -8px #a3a5ae;
+            box-shadow: 0px 10px 10px -8px #a3a5ae;
+    height: 200px;
+    border-radius: 5px;
+    width: 250px;
+  }
+  body div div img {
+    height: auto;
+    width: 40px;
+    margin-left: auto;
+    margin-top: 25px;
+  }
+  body div div h3 {
+    color: #4c4e61;
+    margin-top: -20px;
+  }
+  body div div small {
+    display: block;
+    color: #a3a5ae;
+    font-size: 11px;
+  }
+  body div .Supervisor {
+    border-top: 3px solid #45d3d3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  body div .Team {
+    border-top: 3px solid #ea5353;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 20px;
+    margin-bottom: -100px;
+  }
+  body div .Calculator {
+    border-top: 3px solid #549ef2;
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  body div .Karma {
+    border-top: 3px solid #fcaf4a;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    margin-top: -120px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

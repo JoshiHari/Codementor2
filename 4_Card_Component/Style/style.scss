@@ -1,0 +1,206 @@
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$darkBlue: hsl(234, 12%, 34%);
+$grayBlue: hsl(229, 6%, 66%);
+$lightGray: hsl(0, 0%, 98%);
+
+$fontSize: 15px;
+$fontFamily: "Poppins", sans-serif;
+
+$phoneWidth: 375px;
+$desktopWidth: 1440px;
+
+@mixin phone {
+  @media (max-width: $phoneWidth) and (min-width: 0px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktopWidth) and (min-width: 375px) {
+    @content;
+  }
+}
+
+@include phone {
+  * {
+    font-family: $fontFamily;
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: $lightGray;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    h1 {
+      color: $darkBlue;
+      font-weight: 200;
+      font-size: 18px;
+      text-align: center;
+
+      span {
+        color: $darkBlue;
+        font-weight: 600;
+        display: block;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      color: $grayBlue;
+      text-align: center;
+      display: block;
+      width: 250px;
+      font-weight: 200px;
+      margin-bottom: 35px;
+    }
+
+    div {
+      div {
+        background-color: white;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0px 10px 10px -8px $grayBlue;
+        height: 200px;
+        border-radius: 5px;
+        width: 250px;
+
+        img {
+          margin-top: 30px;
+          margin-bottom: -10px;
+          height: auto;
+          width: 40px;
+          float: right;
+        }
+
+        h3 {
+          color: $darkBlue;
+          margin-top: -10px;
+        }
+
+        small {
+          display: block;
+          color: $grayBlue;
+          font-size: 11px;
+        }
+      }
+      .Supervisor {
+        border-top: 3px solid $cyan;
+      }
+      .Team {
+        border-top: 3px solid $red;
+      }
+      .Karma {
+        border-top: 3px solid $orange;
+      }
+      .Calculator {
+        border-top: 3px solid $blue;
+      }
+    }
+  }
+}
+
+@include desktop {
+  * {
+    font-family: $fontFamily;
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    h1 {
+      margin-top: 120px;
+      display: block;
+      text-align: center;
+      font-weight: 200;
+      margin-bottom: -130px;
+    }
+
+    p {
+      display: block;
+      text-align: center;
+      width: 500px;
+      margin: auto;
+      margin-bottom: 100px;
+      color: $grayBlue;
+    }
+    span {
+      display: block;
+      font-weight: 600;
+    }
+    div {
+      display: grid;
+      grid-template-columns: 234px, 234px, 234px;
+      grid-template-rows: 200px, 200px, 200px;
+      align-content: center;
+      margin-top: -100px;
+      div {
+        background-color: white;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0px 10px 10px -8px $grayBlue;
+        height: 200px;
+        border-radius: 5px;
+        width: 250px;
+
+        img {
+          height: auto;
+          width: 40px;
+          margin-left: auto;
+          margin-top: 25px;
+        }
+
+        h3 {
+          color: $darkBlue;
+          margin-top: -20px;
+        }
+
+        small {
+          display: block;
+          color: $grayBlue;
+          font-size: 11px;
+        }
+      }
+
+      .Supervisor {
+        border-top: 3px solid $cyan;
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      .Team {
+        border-top: 3px solid $red;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 20px;
+        margin-bottom: -100px;
+      }
+
+      .Calculator {
+        border-top: 3px solid $blue;
+        grid-column: 3;
+        grid-row: 2;
+      }
+
+      .Karma {
+        border-top: 3px solid $orange;
+        grid-column: 2;
+        grid-row: 3;
+        margin-top: -120px;
+      }
+    }
+  }
+}

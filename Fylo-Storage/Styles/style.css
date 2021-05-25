@@ -1,0 +1,102 @@
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 374px) {
+  body {
+    background-image: url("/Images/bg-mobile.png");
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .top {
+    background-color: hsl(228, 56%, 26%);
+    padding: 20px 40px 20px 10px;
+    border-radius: 10px;
+    border-top-right-radius: 35%;
+    width: 85%;
+  }
+
+  .top > * {
+    padding: 20px;
+  }
+
+  .icons > img {
+    padding: 10px;
+    margin: 5px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .bottom {
+    background-color: hsl(228, 56%, 26%);
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+
+  .bottom > p > span {
+    opacity: 100%;
+  }
+
+  .stats {
+    background-color: white;
+    color: hsl(229, 57%, 11%);
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 68%;
+  }
+  .stats > p > span {
+    font-size: 1.5rem;
+    color: hsl(229, 57%, 11%);
+  }
+
+  .meter {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 250px;
+    height: 1.4em;
+    border-radius: 10px;
+    background: hsl(229, 57%, 11%);
+    z-index: 1;
+  }
+
+  .prograss {
+    width: 200px;
+    height: 1em;
+    border-radius: 10px;
+    background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    animation-duration: 3s;
+    animation-name: slide-in;
+  }
+
+  .cursor {
+    width: 0.75em;
+    height: 0.75em;
+    background: white;
+    border-radius: 20rem;
+    z-index: 5;
+    transform: translateX(-2px);
+    animation-duration: 3s;
+    animation-name: cursor-in;
+  }
+}
